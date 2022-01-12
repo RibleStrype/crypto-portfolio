@@ -5,7 +5,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - /Users/eharcevs/Edu/crypto-portfolio/pg-init:/docker-entrypoint-initdb.d:ro
+      - ./pg-init:/docker-entrypoint-initdb.d:ro
     environment:
       POSTGRES_PASSWORD: secret
       POSTGRES_DB: crypto_portfolio
