@@ -18,4 +18,4 @@ CREATE TABLE investments(
         FOREIGN KEY(investor_id) REFERENCES investors(id)
 );
 
-INSERT INTO investors(id, name) VALUES(1, 'Erik');
+INSERT INTO investors(id, name) VALUES(1, 'Default');
